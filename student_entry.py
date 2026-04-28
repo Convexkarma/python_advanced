@@ -1,5 +1,5 @@
-from check_grade import check_grade
-from check_grade import check_name
+from check_grade import check_grade 
+from check_grade import check_name 
 
 students = {}
 
@@ -34,13 +34,10 @@ for i in range (student_number):
                 print (check_grade(name))
                 continue
         students [name]= grade
-        
-file = open ("class_list.txt","a")  # opens a new file called class_list.txt and appends to it
+with open ("students_exam.txt","a") as file:
+    file.write(str(students))
 
-file.write(str(students)) #writes the students dict to it but I had to make it to str
 
-file.close() # Closes the file ...tho there are better ways to do this
-        
 print ("\n===================RESULTS======================")
 print ("=====NAME==============================GRADE====")
 

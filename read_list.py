@@ -3,3 +3,4 @@ with open ("class_list.txt","r") as file: #r is not necessary because the defaul
 
 for line in lines:
     print (f"Hello, {line}")
+

@@ -5,3 +5,4 @@ with open ("students.csv") as file:
         name , house = line.rstrip().split(",")
         print(f"{name} is in {house}")
         
+        

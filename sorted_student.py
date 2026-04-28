@@ -16,6 +16,7 @@ def get_house (students):
 def get_name (students):
     return students["name"]
 
+
 for anything in sorted (students, key=get_name):
     print (f"{anything['name']} is in {anything['house']}") #yeah really glad you fixed this bug to be honest
 #print (sorted (students, key=get_name))
