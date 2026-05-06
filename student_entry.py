@@ -42,6 +42,6 @@ print ("\n===================RESULTS======================")
 print ("=====NAME==============================GRADE====")
 
 for b,student in enumerate(students,start=1): # I looked up enumerate function though
-   
+
     print (f"{b}.",student,"\t\t",students[student],)
     
